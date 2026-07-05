@@ -2,11 +2,11 @@
 
 ## Overview
 
-This repository contains the Python scripts developed for the inversion of Electrical Resistivity Tomography (ERT) data using **PyGIMLi**. The scripts implement different inversion strategies, including classical smoothness-constrained inversion, geostatistical regularization, inversion with alternative starting models, and cross-array forward modelling.
+This repository contains the Python scripts developed for the inversion of ERT data using **pyGIMLi**. The scripts implement different inversion strategies, including classical smoothness-constrained inversion, geostatistical regularization, inversion with alternative starting models, and cross-array forward modeling.
 
 > **Important**
 >
-> The inversion parameters adopted in these scripts (e.g., regularization strength, correlation lengths, error models, vertical weighting (*zWeight*), and other inversion settings) were selected specifically for the Wendelsheim and Pfäffingen datasets investigated in this study. These parameters should **not** be directly transferred to other ERT datasets. Instead, they should be adapted according to the data quality, acquisition geometry, geological setting, and inversion objectives of the study area.
+> The inversion parameters adopted in these scripts (e.g., regularization strength, correlation lengths, error models, vertical weighting (*zWeight*), and other inversion settings) were selected specifically for the Wendelsheim and Pfäffingen data sets investigated in this study. These parameters should **not** be directly transferred to other ERT datasets. Instead, they should be adapted according to the data quality, acquisition geometry, geological setting, and inversion objectives of the study area.
 
 ---
 
@@ -23,7 +23,9 @@ The workflow includes:
 - creating the error model,
 - generating the inversion mesh using the default PyGIMLi mesh,
 - applying a homogeneous starting model, and
-- performing the smoothness-constrained inversion.
+- performing the smoothness-constrained inversion including the topography
+- calcualting and plotting residuals
+- calculating and plotting sensitivity.
 
 ---
 
@@ -38,7 +40,7 @@ The workflow includes:
 - generating the default PyGIMLi inversion mesh,
 - applying a homogeneous starting model,
 - defining horizontal and vertical correlation lengths, and
-- performing the inversion using geostatistical regularization.
+- performing the inversion using geostatistical regularization including the topography.
 
 ---
 
