@@ -21,7 +21,7 @@ The workflow includes:
 - importing the ERT dataset,
 - constructing the elevation profile,
 - creating the error model,
-- generating the inversion mesh using the default PyGIMLi mesh,
+- generating the inversion mesh using the default pyGIMLi mesh,
 - applying a homogeneous starting model, and
 - performing the smoothness-constrained inversion including the topography
 - calcualting and plotting residuals
@@ -37,7 +37,7 @@ The workflow includes:
 
 - constructing the elevation profile,
 - creating the error model,
-- generating the default PyGIMLi inversion mesh,
+- generating the default pyGIMLi inversion mesh,
 - applying a homogeneous starting model,
 - defining horizontal and vertical correlation lengths, and
 - performing the inversion using geostatistical regularization including the topography.
